@@ -43,19 +43,3 @@ The weights for [2018 CVMP DeepCalib] can be found [here](https://drive.google.c
 #### Undistortion
 One way to qualitatively assess the accuracy of predicted parameters is to use those to undistort images that were used to predict the parameters. Undistortion folder contains MATLAB code to undistort multiple images from .txt file. The format of the .txt file is the following: 1st column contains `path to the image`, 2nd column is `focal length`, 3rd column is `distortion parameter`. Each row corresponds to a single image. With a simple modification you can use it on a single image by giving direct path to it and predicted parameters. However, you need to change only `undist_from_txt.m` file, not the `undistSphIm.m`.
 
-## Citation
-```
-@inproceedings{bogdan2018deepcalib,
-  title={DeepCalib: a deep learning approach for automatic intrinsic calibration of wide field-of-view cameras},
-  author={Bogdan, Oleksandr and Eckstein, Viktor and Rameau, Francois and Bazin, Jean-Charles},
-  booktitle={Proceedings of the 15th ACM SIGGRAPH European Conference on Visual Media Production},
-  year={2018}
-}
-
-@inproceedings{xiao2012recognizing,
-  title={Recognizing scene viewpoint using panoramic place representation},
-  author={Xiao, Jianxiong and Ehinger, Krista A and Oliva, Aude and Torralba, Antonio},
-  booktitle={2012 IEEE Conference on Computer Vision and Pattern Recognition},
-  year={2012},
-}
-```
